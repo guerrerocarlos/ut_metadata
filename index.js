@@ -128,9 +128,9 @@ module.exports = function (metadata) {
     } catch (err) {}
 
     // check hash
-    if (this._infoHash && this._infoHash !== sha1.sync(metadata)) {
-      return false
-    }
+    // if (this._infoHash && this._infoHash !== sha1.sync(metadata)) {
+    //   return false
+    // }
 
     this.cancel()
 
